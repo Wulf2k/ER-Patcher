@@ -33,8 +33,8 @@ namespace ER_Patcher
             ba = File.ReadAllBytes(txtPath.Text);
             File.WriteAllBytes(txtPath.Text + ".old", ba);
 
-            rep("CheatDetect Neuter", "e8 d0 03 ff ff 33 ff 48 39 3d 2f ab ef 02 75 42", "90 90 90 90 90 33 ff 48 39 3d 2f ab ef 02 75 42");
-            rep("Logos begone", "00 e8 6a 6d ba ff 80 bf b8 00 00 00 00 74 53 48", "00 e8 6a 6d ba ff 80 bf b8 00 00 00 00 90 90 48");
+            rep("CheatDetect Neuter", "e8 ?? ?? ?? ?? 33 ff 48 39 3d ?? ?? ?? ?? 75 42", "90 90 90 90 90 33 ff 48 39 3d ?? ?? ?? ?? 75 42");
+            rep("Logos begone", "00 e8 ?? ?? ?? ?? 80 bf b8 00 00 00 00 74 53 48", "00 e8 ?? ?? ?? ?? 80 bf b8 00 00 00 00 90 90 48");
             rep("Push rax(1)", "48 8d 64 24 f8 48 89 04 24", "50 90 90 90 90 90 90 90 90");
             rep("Push rax(2)", "48 89 44 24 f8 48 8d 64 24 f8", "50 90 90 90 90 90 90 90 90 90");
             rep("Push rbx(1)", "48 8d 64 24 f8 48 89 1c 24", "53 90 90 90 90 90 90 90 90");
@@ -102,7 +102,7 @@ namespace ER_Patcher
 
 
 
-            File.WriteAllBytes(txtPath.Text + ".new", ba);
+            File.WriteAllBytes(txtPath.Text, ba);
         }
 
         public void rep(string name, string fb, string rb)
