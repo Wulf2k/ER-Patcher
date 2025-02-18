@@ -41,7 +41,8 @@ namespace ER_Patcher
             this.txtPath.Name = "txtPath";
             this.txtPath.Size = new System.Drawing.Size(491, 20);
             this.txtPath.TabIndex = 0;
-            this.txtPath.Text = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\ELDEN RING\\Game\\eldenring.exe";
+            this.txtPath.Text = "C:\\Program Files (x86)\\Steam\\steamapps\\common\\DARK SOULS REMASTERED\\DarkSoulsRema" +
+    "stered.exe";
             // 
             // btnBrowse
             // 
